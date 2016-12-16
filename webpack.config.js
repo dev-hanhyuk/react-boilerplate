@@ -1,6 +1,8 @@
 'use strict';
 
 const { resolve } = require('path');
+const precss = require('precss');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: './app/main.js',
@@ -26,7 +28,14 @@ module.exports = {
         query: {
           presets: ['react', 'es2015', 'stage-2']
         }
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style!css?sourceMap!postcss!sass?sourceMap'
       }
     ]
+  },
+  postcss () {
+    return [autoprefixer, precss];
   }
 };
