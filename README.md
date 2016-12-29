@@ -21,3 +21,11 @@ static_dir    | actual_dir          | Example
 --------------|---------------------|-----------------------------------------------
 `_components` | ROOT/app/components | import { Login } from '_components/login/Login'
 `_actions` | ROOT/app/actions | import { authenticate } from '_actions/auth'
+
+
+## Database seed
+Currently this boilerplate has `User` schema. Edit `db/seed.js` to modify seed details.
+
+`
+npm run seed
+`
