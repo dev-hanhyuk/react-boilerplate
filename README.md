@@ -34,4 +34,4 @@ npm run seed
 1. User `Login Form`
 2. Post Request to `api/login` api
 3. Verify `User` from the Database
-4. Response to the fron-end and update the state(dispatch)
+4. Response to the front-end and update the state(dispatch)
