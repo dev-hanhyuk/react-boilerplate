@@ -29,3 +29,9 @@ Currently this boilerplate has `User` schema. Edit `db/seed.js` to modify seed d
 `
 npm run seed
 `
+
+## Login Process
+1. User `Login Form`
+2. Post Request to `api/login` api
+3. Verify `User` from the Database
+4. Response to the fron-end and update the state(dispatch)
