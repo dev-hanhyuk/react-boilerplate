@@ -1,6 +1,7 @@
 'use strict'
 
 const express = require('express')
+const bodyParser = require('body-parser')
 const {resolve} = require('path')
 
 // Bones has a symlink from node_modules/APP to the root of the app.
@@ -18,6 +19,11 @@ if (!pkg.isProduction && !pkg.isTesting) {
 }
 
 module.exports = app
+
+  // Body parsing middleware
+  .use(bodyParser.urlencoded({ extended: true }))
+  .use(bodyParser.json())
+
   // Serve static files from ../public
   .use(express.static(resolve(__dirname, '..', 'public')))
 
