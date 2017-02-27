@@ -20,6 +20,7 @@
   "dependencies": {
     "check-node-version": "^1.1.2",
     "express": "^4.14.0",
+    "nodemon": "^1.11.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-redux": "^4.4.6",
